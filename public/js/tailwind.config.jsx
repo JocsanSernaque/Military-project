@@ -11,7 +11,8 @@ tailwind.config = {
         colors: {
           primary: '#082625',
           second: '#385D5E',
-          thirth: '#034846'
+          thirth: '#034846',
+          yellowH: '#DEDA08'
           
         }
       }

@@ -20,6 +20,7 @@ $id = $_SESSION['id'];
 
     <script src="../public/js/tailwind.config.jsx"></script>
 </head>
+
 <body class="bg-text text-sm font-ibmPlex">
     <div class="flex">
         <!-- Navbar Izquierda -->
@@ -32,19 +33,19 @@ $id = $_SESSION['id'];
             <nav class="mt-5">
                 <ul class="flex justify-start flex-col text-sm mb-10 pt-8 gap-3">
                     <li class="">
-                        <a href="dashboard.php?page=enlace1" class="block py-2 px-4 rounded-md hover:bg-fourth hover:text-primary">Dashboard</a>
+                        <a href="dashboard.php?page=enlace1" class="block py-2 px-4 rounded-md hover:bg-yellow-500">Dashboard</a>
                     </li>
                     <li class="">
-                        <a href="dashboard.php?page=enlace2" class="block py-2 px-4 rounded-md hover:bg-fourth hover:text-primary">Personal Militar</a>
+                        <a href="dashboard.php?page=enlace2" class="block py-2 px-4 rounded-md hover:bg-yellow-500">Personal Militar</a>
                     </li>
                     <li class="">
-                        <a href="dashboard.php?page=enlace3" class="block py-2 px-4 rounded-md hover:bg-fourth hover:text-primary">Exámen de Control Físico</a>
+                        <a href="dashboard.php?page=enlace3" class="block py-2 px-4 rounded-md hover:bg-yellow-500">Exámen de Control Físico</a>
                     </li>
                     <li class="">
-                        <a href="dashboard.php?page=enlace4" class="block py-2 px-4 rounded-md hover:bg-fourth hover:text-primary">Enlace 4</a>
+                        <a href="dashboard.php?page=enlace4" class="block py-2 px-4 rounded-md hover:bg-yellow-500">Enlace 4</a>
                     </li>
                     <li class="">
-                        <a href="dashboard.php?page=enlace5" class="block py-2 px-4 rounded-md hover:bg-fourth hover:text-primary">Enlace 5</a>
+                        <a href="dashboard.php?page=enlace5" class="block py-2 px-4 rounded-md hover:bg-yellow-500">Enlace 5</a>
                     </li>
                 </ul>
             </nav>
@@ -102,6 +103,11 @@ $id = $_SESSION['id'];
                             require_once "admin/admin.php";
                             echo "</div>";
                             break;
+                        case 'nuevoPersonal':
+                            echo "<div class='flex flex-col justify-center items-center gap-2'>";
+                            require_once "personalMil/nuevoPersonalMil.php";
+                            echo "</div>";
+                            break;
 
                         default:
                             echo "<div class=''>";
@@ -119,4 +125,5 @@ $id = $_SESSION['id'];
         </div>
     </div>
 </body>
+
 </html>
